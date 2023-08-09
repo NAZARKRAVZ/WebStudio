@@ -1,0 +1,37 @@
+:root{
+  --second-main-color:rgba(33, 150, 243, 1);
+  --all-black: rgba(33, 33, 33, 1);
+  --all-p-tell: rgba(117, 117, 117, 1);
+  --adres-buton: rgba(255, 255, 255, 1);
+  --foter: rgba(255, 255, 255, 0.6);
+  --bg: rgba(47, 48, 58, 1);
+}
+
+.WebStudio{
+color: var(--second-main-color);
+}
+.headertell{
+  color: var(--all-p-tell);
+}
+.headeremail{
+  color: var(--second-main-color);
+}
+.address{
+  color: var(--adres);
+}
+footer {
+  background-color: var(--bg);
+  padding: 20px;
+  text-align: left;
+}
+button{
+  background-color: var(--second-main-color);
+  color: var(--adres-buton);
+  width: 216px;
+  height: 50px;
+  top: 430px;
+  left: 692px;
+  border-radius: 4px;
+  text-align: center;
+}
+
