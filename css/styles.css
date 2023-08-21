@@ -20,3 +20,9 @@ text-align: left;
 color: var(--all-black);
 
 }
+.features-list-btn{
+  cursor: pointer;
+}
+.nav-list-item{
+  display: inline-block;
+}
