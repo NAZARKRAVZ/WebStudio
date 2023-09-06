@@ -10,18 +10,8 @@ body{
   font-family: "Roboto";
   font-size: 14px;
 }
-.nav-list-link{
-  font-family: Roboto;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.1;
-letter-spacing: 0.02em;
-text-align: left;
-color: var(--all-black);
 
-}
-
-/* .header-logo{
+.header-logo{
   width: 145px;
   height: 31px;
   margin-left: 215px;
@@ -29,48 +19,12 @@ color: var(--all-black);
   margin-bottom: 25px;
   margin-right: 93px;
   box-sizing: border-box;
-  font-size: 30px;
-} */
+  font-size: 31px;
+}
 
-.header-container{
+.containe{
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.hero-container{
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.features-container{
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.work-container{
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.team-container{
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.footer-conteiner{
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
