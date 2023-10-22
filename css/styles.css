@@ -8,6 +8,7 @@
   --footer-mail-number-color: rgba(255, 255, 255, 0.6);
   --adress-hero-color: rgba(255, 255, 255, 1);
   --team-bg-color: rgba(245, 244, 250, 1);
+  --bgimg-color:rgba(245, 244, 250, 1);
 }
 
 .container{
@@ -19,15 +20,18 @@
 
 
 .header{
-  background-color: var(--white-main-color);
   padding: 24px 0;
 }
 
 .header-wrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+
+   /* Лого */
+
+
 
   .logo{
       font-family: Raleway;
@@ -39,8 +43,7 @@
       text-decoration: none;
       color: var(--blue-main-color);
   }
-
-      
+     
   .logo-header{
       color: var(--black-main-color);
   }
@@ -53,9 +56,8 @@ body{
   font-family: Roboto;
   font-size: 14px;
 }
-    
+      /* Шапка */
 .nav{
-  font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -71,30 +73,21 @@ body{
   gap: 50px;
 }
 
-.nav-list-item, .nav-list-link{
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--descript-and-header-color);
-  
-}
-.contacts-list-item, .contacts-list-link{
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-align: left;
-  text-decoration: none;
+.header-link-mail, .header-link-number{
   color: var(--p-color);
 }
 
-.nav-list-link:hover{
-  color: var(--blue-main-color);
+.nav-list-item, .nav-list-link, .contacts-list-item{
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 
   .section-hero{
       background-color: var(--bg-color);
+      padding: 200px 0;
   }
 
 .section-hero-title{
@@ -106,10 +99,6 @@ body{
   color: var(--adress-hero-color);
   max-width: 696px;
   margin: 0 auto;
-}
-
-.section-hero{
-  padding: 200px 0;
 }
 
 .section-hero-btn{
@@ -127,7 +116,6 @@ body{
   margin: 0 auto;
   margin-top: 30px;
 }
-     
   .section-features{
       padding: 94px 0;
   }
@@ -147,18 +135,75 @@ body{
   line-height: 1,1;
   color: var(--descript-and-header-color);
   padding-bottom: 10px;
+
+  padding-top: 30px;
 }
 
-.feauture-list-item{
-  max-width: 270px;
+.feautures-list-img-first::before{
+  content: "";
+
+  background-image: url("./img/antena.png");
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  background-color: var(--bgimg-color);
+
+  background-position: center;
+}
+
+.feautures-list-img-second::before{
+  content: "";
+
+  background-image: url("./img/clock.png");
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  background-color: var(--bgimg-color);
+  
+  background-position: center;
+}
+
+.feautures-list-img-third::before{
+  content: "";
+
+  background-image: url("./img/diagramma.png");
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  background-color: var(--bgimg-color);
+  
+  background-position: center;
+}
+
+.feautures-list-img-fourth::before{
+  content: "";
+
+  background-image: url("./img/astronaut.png");
+ 
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  background-repeat: no-repeat;
+
+  background-color: var(--bgimg-color);
+  
+  background-position: center;
 }
 
 .feautures-list-descript{
   font-weight: 400;
   line-height: 1.7;
   color: var(--p-color);
+
+  max-width: 270px;
 }
-  
+      /* "Чим ми займаємось" */
   .section-work{
       padding-bottom: 94px;
   }
@@ -180,9 +225,10 @@ body{
   height: 294px;
 }
      
+
   .section-team{
       background: var(--team-bg-color);
-      padding-bottom: 94px;
+      padding: 94px;
   }
 
 .section-work-title, .section-team-descript{
@@ -199,7 +245,7 @@ body{
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.6px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
@@ -214,6 +260,9 @@ body{
 .team-list-item{
   background: var(--adress-hero-color);
   height: 368px;
+  border-radius: 4px;
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.14);
+  
 }
 
 .team-list-img{
@@ -233,21 +282,19 @@ body{
   font-weight: 400;
 }
 
-.team-wrap{
-  display: flex;
-  flex-direction: column;
-  
-}
-
 .team-list{
   display: flex;
   justify-content: space-between;
 }
-    
+      
   .footer{
       background: var(--bg-color);
       padding: 60px 0;
   }
+
+.adress{
+margin-top: 20px;
+}
 
 .adress-list-link{
   font-size: 14px;
@@ -261,4 +308,8 @@ body{
 
 .adress-list-location-link{
   color: var(--adress-hero-color);
+}
+
+.adress-list-item{
+  margin-bottom: 9px;
 }
