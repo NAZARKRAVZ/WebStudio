@@ -9,6 +9,7 @@
   --adress-hero-color: rgba(255, 255, 255, 1);
   --team-bg-color: rgba(245, 244, 250, 1);
   --bgimg-color:rgba(245, 244, 250, 1);
+  --section-hero-bg-color-for-img:rgba(47, 48, 58, 0.4);
 }
 
 .container{
@@ -25,10 +26,114 @@
 
 .header-wrap{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+      /* ico-header */
+.contacts-list{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  padding-left: 318px;
+}
+
+.contact-list-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--p-color);
+}
+
+.contact-list-item:hover{
+  color: var(--blue-main-color);
+}
+
+
+.contact-list-svg{
+  fill: currentColor;
+}
+      /* ico-team */
+.icons-list{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  margin-top: 16px;
+}
+
+.icons-list-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgba(175, 177, 184);
+}
+
+.icons-list-link:hover{
+  color: var(--adress-hero-color);
+  background-color: var(--blue-main-color);
+}
+
+.icons-list-svg{
+  fill: currentColor;
+}
+
+      /* ico-clients */
+
+.client-ico-list{
+  display: flex;
+  gap: 30px;
+}
+
+.client-ico-item{
+  flex-basis: calc((100% - 150px) / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border-radius: 4px;
+  border: solid 1px;
+  color: rgba(175, 177, 184);
+}
+
+.client-ico-item:hover{
+  color: var(--blue-main-color);
+  border-color: var(--blue-main-color);
+}
+
+.client-ico-svg{
+  fill: currentColor;
+}
+
+      /* ico-join */
+.join-list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--p-color);
+}
+
+.join-list-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--adress-hero-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-list-link:hover{
+  background-color: var(--blue-main-color);
+}
+
+.join-list-svg{
+  fill: currentColor;
+}
    /* Лого */
 
 
@@ -39,8 +144,10 @@
       font-weight: 700;
       line-height: 31px;
       letter-spacing: 0.03em;
-      text-align: left;
       text-decoration: none;
+
+      margin-right: 93px;
+
       color: var(--blue-main-color);
   }
      
@@ -56,39 +163,33 @@ body{
   font-family: Roboto;
   font-size: 14px;
 }
+      /* Шапка */
 
-.nav{
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
 .nav-list{
   display: flex;
   gap: 50px;
 }
 
-.contacts-list{
-  display: flex;
-  gap: 50px;
-}
-
-.header-link-mail, .header-link-number{
-  color: var(--p-color);
+.nav-list-link:hover{
+  color: var(--blue-main-color);
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
+      /* Секція герой */
 
   .section-hero{
       background-color: var(--bg-color);
+
       padding: 200px 0;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/hero-bg.png");
+
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/section-hero-bg-img.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
   }
 
 .section-hero-title{
@@ -105,6 +206,7 @@ body{
 .section-hero-btn{
    background-color: var(--blue-main-color);
    color: var(--white-main-color);
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1,8;
@@ -117,6 +219,7 @@ body{
   margin: 0 auto;
   margin-top: 30px;
 }
+      /* Особливості */
   .section-features{
       padding: 94px 0;
   }
@@ -186,7 +289,6 @@ body{
   content: "";
 
   background-image: url("./img/astronaut.png");
- 
   width: 270px;
   height: 120px;
   display: inline-block;
@@ -215,17 +317,33 @@ body{
   justify-content: space-between;
 }
 
-.section-work-title{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-
 .work-list-img{
   width: 370px;
   height: 294px;
 }
-     
+.work-item-desc{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2f303ACC ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  }
+.work-item-wrap{
+position: relative;
+}
+
+      /* Команда */
 
   .section-team{
       background: var(--team-bg-color);
@@ -238,6 +356,9 @@ body{
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-align: center;
+
+  margin-bottom: 50px;
+
   color: var(--descript-and-header-color);
 }
 
@@ -260,10 +381,9 @@ body{
 
 .team-list-item{
   background: var(--adress-hero-color);
-  height: 368px;
-  border-radius: 4px;
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.14);
-  
+  height: 428px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .team-list-img{
@@ -273,9 +393,9 @@ body{
 
 .team-list-title{
   color: var(--descript-and-header-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .team-list-descript{
@@ -287,11 +407,55 @@ body{
   display: flex;
   justify-content: space-between;
 }
-      
+
+.icon-list-item{
+  padding: 12px;
+}
+      /* clients */
+.section-clients{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.client-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+
+      /* Футер */
   .footer{
       background: var(--bg-color);
       padding: 60px 0;
   }
+
+.footer-wrap{
+  display: flex;
+  gap: 70px;
+}
+
+.footer-ico-list{
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.join-ico-title{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+
+  color: var(--adress-hero-color);
+}
 
 .adress{
 margin-top: 20px;
